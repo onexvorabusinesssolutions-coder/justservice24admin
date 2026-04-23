@@ -1,0 +1,207 @@
+/* Admin Login Page */
+.adm-auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f9ff;
+  padding: 24px 16px;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+.adm-auth-card {
+  display: flex;
+  width: 100%;
+  max-width: 960px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(50,50,93,0.1), 0 5px 15px rgba(0,0,0,0.07);
+  overflow: hidden;
+  min-height: 560px;
+}
+
+/* Left */
+.adm-auth-left {
+  flex: 6;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 32px 36px;
+  display: flex;
+  flex-direction: column;
+}
+
+.adm-logo-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.adm-logo-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.adm-brand-name {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1e293b;
+  line-height: 1.1;
+}
+
+.adm-brand-name span { color: #00C853; }
+
+.adm-brand-tagline {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: 2px;
+  letter-spacing: 0.3px;
+}
+
+.adm-left-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.adm-welcome-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.adm-welcome-desc {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 380px;
+}
+
+/* Illustration */
+.adm-illustration {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.adm-illus-building {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.adm-illus-roof {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 30px solid #0284c7;
+  opacity: 0.8;
+}
+
+.adm-illus-body {
+  width: 80px;
+  height: 70px;
+  background: #bfdbfe;
+  border-radius: 0 0 4px 4px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 8px 0;
+  position: relative;
+}
+
+.adm-illus-door {
+  width: 18px;
+  height: 28px;
+  background: #0284c7;
+  border-radius: 3px 3px 0 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.adm-illus-window {
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 2px;
+  position: absolute;
+  top: 12px;
+}
+
+.adm-illus-window:first-of-type { left: 10px; }
+.adm-illus-window:last-of-type { right: 10px; }
+
+.adm-illus-dots {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.adm-illus-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0284c7;
+  opacity: 0.4;
+}
+
+.adm-illus-dots span:nth-child(2) { opacity: 0.7; }
+.adm-illus-dots span:nth-child(3) { opacity: 1; }
+
+/* Right */
+.adm-auth-right {
+  flex: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 40px;
+  border-left: 1px solid #f1f5f9;
+}
+
+.adm-auth-right-inner { width: 100%; }
+
+.adm-auth-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.adm-auth-header h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.adm-auth-header p { color: #6b7280; font-size: 13px; }
+
+.adm-divider {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin: 18px 0;
+}
+
+.adm-terms {
+  font-size: 11px;
+  color: #9ca3af;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.adm-terms a { color: #9ca3af; text-decoration: underline; }
+
+@media (max-width: 700px) {
+  .adm-auth-card { flex-direction: column; }
+  .adm-auth-left { padding: 24px 20px; }
+  .adm-welcome-title { font-size: 22px; }
+  .adm-illustration { display: none; }
+  .adm-auth-right { padding: 24px 20px; border-left: none; border-top: 1px solid #f1f5f9; }
+}
