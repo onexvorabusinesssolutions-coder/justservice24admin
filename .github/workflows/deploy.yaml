@@ -35,6 +35,14 @@ jobs:
 
             git pull origin main
 
+             # 🔥 CREATE .env FROM GITHUB SECRETS
+            cat > .env <<EOF
+            PUBLIC_URL=${{ secrets.PUBLIC_URL }}
+            VITE_APP_BASE_NAME=${{ secrets.VITE_APP_BASE_NAME }}
+            VITE_API_URL=${{ secrets.VITE_API_URL }}
+            VITE_IMG_URL=${{ secrets.VITE_IMG_URL }}
+            EOF
+
             # Node setup
             source /etc/profile.d/nvm.sh || true
 
